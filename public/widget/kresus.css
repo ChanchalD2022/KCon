@@ -1,0 +1,394 @@
+.overly-container {
+  background-color: #00000066;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  height: 600px;
+  width: 600px;
+}
+
+.modal .modal-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.modal .modal-inner .main-screen {
+  padding: 10px;
+  border-radius: 20px;
+  height: 100%;
+  background: rgb(61, 92, 180);
+  background: linear-gradient(
+    180deg,
+    rgba(61, 92, 180, 1) 0%,
+    rgba(72, 104, 188, 1) 35%,
+    rgba(109, 150, 218, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-inner .main-screen .close-icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal .modal-inner .main-screen .close-icon-container .close-icon {
+  cursor: pointer;
+}
+
+.modal .modal-inner .main-screen .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal .modal-inner .main-screen .content .logo img {
+  width: 80px;
+  margin-block: 20px 30px;
+}
+
+.modal .modal-inner .main-screen .content .qr-code {
+  margin-top: 30px;
+}
+
+.modal .modal-inner .main-screen .content .title h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.modal .modal-inner .main-screen .footer {
+  padding-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.modal .modal-inner .main-screen .footer .description {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.apple-store-button button {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 120px;
+  cursor: pointer;
+}
+
+.apple-store-button button img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.get-wallet-btn {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 120px;
+  cursor: pointer;
+}
+
+/* =========== form =========== */
+
+.modal .modal-inner .form-container {
+  background-color: #ffffff;
+  height: 100%;
+}
+.modal .modal-inner .form-container .header {
+  height: 23%;
+  background: rgb(61, 92, 180);
+  background: linear-gradient(
+    180deg,
+    rgba(61, 92, 180, 1) 0%,
+    rgba(72, 104, 188, 1) 35%,
+    rgba(109, 150, 218, 1) 100%
+  );
+  padding: 10px;
+}
+.modal .modal-inner .form-container .header .icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal .modal-inner .form-container .header .icon-container img {
+  cursor: pointer;
+}
+
+.modal .modal-inner .form-container .header .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.modal .modal-inner .form-container .header .logo img {
+  width: 80px;
+}
+
+.modal .modal-inner .form-container .elements .email-input {
+  max-width: 65%;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal .modal-inner .form-container .elements .email-input .title {
+  font-size: 30px;
+  line-height: 1;
+  color: #080d4c;
+  text-align: center;
+}
+.modal .modal-inner .form-container .elements .email-input .description {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #080d4c;
+}
+
+.input-container {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-container input {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-inline: 15px;
+  color: #080d4c;
+  font-size: 14px;
+  caret-color: #080d4c;
+}
+
+.submit-button {
+  width: 100%;
+  border-radius: 25px;
+  height: 45px;
+  border: none;
+  background-color: #080d4c;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.submit-button:disabled {
+  background-color: rgb(187, 183, 183);
+  cursor: not-allowed;
+}
+
+/* email verification */
+
+.modal .modal-inner .form-container .elements .verify-email {
+  max-width: 65%;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal .modal-inner .form-container .elements .verify-email .title {
+  font-size: 30px;
+  line-height: 1;
+  color: #080d4c;
+  text-align: center;
+}
+.modal .modal-inner .form-container .elements .verify-email .description {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #080d4c;
+}
+
+.modal .modal-inner .form-container .elements .verify-email .description span {
+  color: #187dca;
+  cursor: pointer;
+}
+.modal .modal-inner .form-container .elements .verify-email .otp-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 30px;
+}
+
+.otp-input-styles {
+  height: 55px;
+  min-width: 45px;
+  font-size: 25px;
+  color: #080d4c;
+  border: 1px solid #0000001a;
+  outline: none;
+  border-radius: 5px;
+  caret-color: #080d4c;
+}
+.otp-input-styles:focus {
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* success */
+
+.modal .modal-inner .form-container .elements .success {
+  max-width: 65%;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal .modal-inner .form-container .elements .success .title {
+  font-size: 24px;
+  line-height: 1;
+  color: #080d4c;
+  text-align: center;
+}
+.modal .modal-inner .form-container .elements .success .description {
+  font-size: 15px;
+  line-height: 1;
+  color: #080d4c;
+  text-align: center;
+}
+
+.modal .modal-inner .form-container .elements .success .small-text {
+  font-size: 15px;
+  line-height: 1;
+  color: #080d4c;
+  text-align: center;
+}
+
+.modal .modal-inner .form-container .elements .success .qr-image {
+  text-align: center;
+}
+.modal .modal-inner .form-container .elements .success .qr-image img {
+  width: 180px;
+}
+
+/* stepper */
+
+.stepper {
+  width: 65%;
+  margin-inline: auto;
+  margin-top: 20px;
+  height: 18px;
+  background-color: rgb(244, 243, 243);
+  border-radius: 10px;
+  position: relative;
+}
+
+.stepper .indicator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background: rgb(61, 92, 180);
+  background: linear-gradient(
+    270deg,
+    rgba(61, 92, 180, 1) 0%,
+    rgba(72, 104, 188, 1) 35%,
+    rgba(109, 150, 218, 1) 100%
+  );
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.stepper .tags {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding-inline: 3px;
+}
+
+.stepper .tags > div {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.stepper .tags > div p {
+  position: absolute;
+  transform: translate(-35%, 5px);
+  font-size: 12px;
+  color: rgb(190, 190, 190);
+}
+
+.stepper .tags > div p.active {
+  color: #080d4c;
+}
+
+.error {
+  font-size: 14px;
+  color: tomato;
+  margin-top: 5px;
+}
+
+.apple-store-button {
+  border: none;
+  background-color: transparent;
+  width: 120px;
+  height: 40px;
+}
+
+.apple-store-button img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* For JS OTP Styling */
+.otp-field-js {
+  display: flex;
+}
+.otp-field-js input {
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2px;
+  border: 1px solid #0000001a;
+  /* background: white; */
+  font-weight: bold;
+  color: #080d4c;
+  outline: none;
+  transition: all 0.1s;
+  caret-color: #080d4c;
+}
+.otp-field-js input:focus {
+  border: 2px solid #a527ff;
+  box-shadow: 0 0 2px 2px #a527ff6a;
+}
+.disabled {
+  opacity: 0.5;
+}
+.space {
+  margin-right: 1rem !important;
+}
